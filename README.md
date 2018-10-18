@@ -15,7 +15,3 @@ npm install
 ```
 npm start
 ```
-
-# MyReads-A-Book-Lending-App
-# MyReads-A-Book-Lending-App
-# MyReads-A-Book-Lending-App
