@@ -27,7 +27,7 @@ import Book from './Book';
 
     submitSearch() { //return search results 
         if(this.state.query === "" || this.state.query === undefined) {
-            return this.setState({ reseults: [] });
+            return this.setState({ results: [] });
     }
 
     BooksAPI.search(this.state.query.trim()).then(res => {

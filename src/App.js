@@ -7,15 +7,18 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import ListBooks from '../src/components/ListBooks';
 import SearchBooks from '../src/components/SearchBooks';
+import { Switch } from 'react-router';
+import NoMatch from '../src/components/NoMatch';
 
 class BooksApp extends React.Component {
   //Keep track of page using browser url
   render() {
     return (
-      <div>
+      <Switch>
         <Route exact path="/" component={ListBooks} />
         <Route exact path="/search" component={SearchBooks} />
-      </div>
+        <Route component={NoMatch}/>
+      </Switch>
     );
   }
 }

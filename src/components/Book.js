@@ -13,7 +13,7 @@ class Book extends React.Component {
                 width: 128,
                 height: 192,
                 backgroundImage:
-                  `url("${this.props.book.imageLinks && (this.props.book.imageLinks.thumbnail || "" )}")`
+                  `url("${this.props.book.imageLinks && (this.props.book.imageLinks.thumbnail || "" )}"), url("http://via.placeholder.com/128x193?text=No%20Cover")`
               }}
             />
             <div className="book-shelf-changer"> 
@@ -32,8 +32,7 @@ class Book extends React.Component {
             </div>
           </div>
           <div className="book-title">{this.props.book.title}</div>
-          <div className="book-authors">{this.props.book.authors && (this.props.book.authors[0] || "No Author...")}</div>
-        </div>
+          <div className="book-authors">{this.props.book.authors ? this.props.book.authors.join(', ') : 'No Author...'}</div>        </div>
       </li>
     );
     }
