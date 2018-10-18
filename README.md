@@ -17,4 +17,4 @@ npm start
 ```
 ---
 
-![MyReads][MyReads.png]
+![MyReads](MyReads.jpg)
