@@ -17,4 +17,4 @@ npm start
 ```
 ---
 
-![MyReads](icons/MyReads.jpg)
+![MyReads](https://github.com/deemullins/MyReads-A-Book-Tracking-App/blob/master/src/icons/MyReads.jpg?raw=true)
